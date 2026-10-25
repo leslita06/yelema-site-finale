@@ -2385,13 +2385,13 @@
 .anc .ctaband .cta-white{padding-left:20px;padding-right:20px;white-space:nowrap}}
 .anc .yl-faq2 .yl-fh{margin:0 0 2px 4px;font:600 12px var(--title);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 @media(min-width:821px){.anc .yl-faq2 .yl-q summary{min-height:34px;display:flex;align-items:center}}
-.anc .lg-outlook{background-image:url(images/logos/lg136-outlook.png)}
-.anc .lg-word{background-image:url(images/logos/lg136-word.png)}
-.anc .lg-powerpoint{background-image:url(images/logos/lg136-powerpoint.png)}
-.anc .lg-powerbi{background-image:url(images/logos/lg136-powerbi.png)}
-.anc .lg-om136{background-image:url(images/logos/lg136-orangemoney.png)}
-.anc .lg-fne{background-image:url(images/logos/lg-fne.png)}
-.anc .lg-meta{background-image:url(images/logos/llm-meta.png)}
+.anc .lg-outlook{background-image:url(../images/logos/lg136-outlook.png)}
+.anc .lg-word{background-image:url(../images/logos/lg136-word.png)}
+.anc .lg-powerpoint{background-image:url(../images/logos/lg136-powerpoint.png)}
+.anc .lg-powerbi{background-image:url(../images/logos/lg136-powerbi.png)}
+.anc .lg-om136{background-image:url(../images/logos/lg136-orangemoney.png)}
+.anc .lg-fne{background-image:url(../images/logos/lg-fne.png)}
+.anc .lg-meta{background-image:url(../images/logos/llm-meta.png)}
 @media(min-width:621px){.anc .catalog-agrid .acard .acard-badge,.anc .catalog-agrid .acard .pv-a{position:absolute;top:12px;z-index:3;display:inline-flex;align-items:center;gap:6px;height:28px;box-sizing:border-box;padding:0 12px 0 10px;border-radius:999px;font:600 12px/1 var(--title);letter-spacing:0;text-transform:none;box-shadow:0 6px 16px rgba(20,8,60,.18);backdrop-filter:blur(6px)}
 .anc .catalog-agrid .acard .acard-badge{left:12px;background:linear-gradient(90deg,#2E4EC4,#8D68FA);color:#fff}
 .anc .catalog-agrid .acard .pv-a{right:12px;left:auto;background:rgba(255,255,255,.92);color:#301667}
@@ -2504,7 +2504,7 @@
 .anc .minis .mini .mini-fn{display:block;font:500 11px/1.25 var(--body,inherit);color:#6b6580;text-align:center;margin-top:-4px}
 .anc .ds-x img,.anc .ds-f img{box-sizing:border-box;object-fit:contain;object-position:50% 100%;padding:5px 4px 0;background:#fff}
 .anc .ds-f img{background:#E9E6FA}
-.anc .cnx .lg-zoom{background-image:url(images/logos/lg-zoom-ic.png)}
+.anc .cnx .lg-zoom{background-image:url(../images/logos/lg-zoom-ic.png)}
 .anc .prix-bloc .calc-step{flex:1 1 auto;justify-content:space-between;width:auto;max-width:220px;padding:0 6px}
 .anc .prix-bloc .res{flex:0 0 auto;margin-left:auto}
 .anc section.sx-lien{padding:0 0 8px!important;margin-top:-56px}
@@ -2917,19 +2917,19 @@
 .anc .v2-cu-team{grid-template-columns:repeat(4,1fr);gap:8px}
 .anc .v2-cu-team figcaption{font-size:10.5px;padding:6px}
 .anc .v2-cu-team figcaption b{font-size:12px}}
-.anc .av-yao-sq{background-image:url(images/experts/av-yao-sq.jpg)}
-.anc .av-sena-sq{background-image:url(images/experts/av-sena-sq.jpg)}
-.anc .av-aminata-sq{background-image:url(images/experts/av-aminata-sq.jpg)}
-.anc .av-aya-sq{background-image:url(images/experts/av-aya-sq.jpg)}
-.anc .av-seydou-sq{background-image:url(images/experts/av-seydou-sq.jpg)}
-.anc .av-lamine-sq{background-image:url(images/experts/av-lamine-sq.jpg)}
-.anc .av-cheikh-sq{background-image:url(images/experts/av-cheikh-sq.jpg)}
-.anc .av-kadiatou-sq{background-image:url(images/experts/av-kadiatou-sq.jpg)}
-.anc .av-daouda-sq{background-image:url(images/experts/av-daouda-sq.jpg)}
-.anc .av-rokia-sq{background-image:url(images/experts/av-rokia-sq.jpg)}
-.anc .av-akissi-sq{background-image:url(images/experts/av-akissi-sq.jpg)}
-.anc .av-ousmane-sq{background-image:url(images/experts/av-ousmane-sq.jpg)}
-.anc .av-fifame-sq{background-image:url(images/experts/av-fifame-sq.jpg)}
+.anc .av-yao-sq{background-image:url(../images/experts/av-yao-sq.jpg)}
+.anc .av-sena-sq{background-image:url(../images/experts/av-sena-sq.jpg)}
+.anc .av-aminata-sq{background-image:url(../images/experts/av-aminata-sq.jpg)}
+.anc .av-aya-sq{background-image:url(../images/experts/av-aya-sq.jpg)}
+.anc .av-seydou-sq{background-image:url(../images/experts/av-seydou-sq.jpg)}
+.anc .av-lamine-sq{background-image:url(../images/experts/av-lamine-sq.jpg)}
+.anc .av-cheikh-sq{background-image:url(../images/experts/av-cheikh-sq.jpg)}
+.anc .av-kadiatou-sq{background-image:url(../images/experts/av-kadiatou-sq.jpg)}
+.anc .av-daouda-sq{background-image:url(../images/experts/av-daouda-sq.jpg)}
+.anc .av-rokia-sq{background-image:url(../images/experts/av-rokia-sq.jpg)}
+.anc .av-akissi-sq{background-image:url(../images/experts/av-akissi-sq.jpg)}
+.anc .av-ousmane-sq{background-image:url(../images/experts/av-ousmane-sq.jpg)}
+.anc .av-fifame-sq{background-image:url(../images/experts/av-fifame-sq.jpg)}
 .anc .hero-4 .hero-tag{width:19.5cqw}
 .anc .hero-4 .hero-tag b{font-size:max(12px,3.3cqw)}
 .anc .hero-4 .hero-tag span{font-size:max(11px,2.8cqw)}
