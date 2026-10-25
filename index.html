@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><title>Yelema, une équipe d'Experts IA pour chaque fonction</title>
+<meta name="robots" content="noindex,nofollow"><title>Yelema | Votre entreprise, décuplée par l'IA</title>
 <meta name="description" content="Des équipes d'Experts IA, une pour chaque fonction, qui se passent le relais dans vos outils. Djénéba les orchestre, et rien ne part sans votre accord.">
 <link rel="icon" href="assets/img/logos/yelema-tuile.png"><meta name="theme-color" content="#1C0F3D">
 <link rel="preload" href="assets/fonts/space-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
@@ -608,11 +608,11 @@ ul,ol{list-style:none}
 @media (max-width:900px){.pbx-g{grid-template-columns:1fr}.pbx-c.pbx-lg,.pbx-c.pbx-tall{grid-column:auto;grid-row:auto}
  .pbx-c{border-right:0;border-bottom:1px solid var(--line)!important}.ctas .btn{min-width:0;white-space:normal}}
 
-.hero{background:none!important;padding:0!important}
-.hero-in{border-radius:0!important}
+.hero-g{grid-template-columns:.92fr 1.08fr!important;gap:48px!important}
+.hero h1{font-size:clamp(42px,5vw,70px)}
 .nav-in{height:88px}
 .scene{overflow:visible}
-.scene .h-ast{position:absolute;right:-30px;top:-34px;width:78px;height:78px;opacity:1;z-index:3;color:#8D68FA;filter:drop-shadow(0 8px 18px rgba(10,0,40,.35))}
+.scene .h-ast{position:absolute;right:-62px;top:-86px;width:132px;height:132px;opacity:1;z-index:3;color:#8D68FA;filter:drop-shadow(0 8px 18px rgba(10,0,40,.35))}
 .ar{opacity:.45!important;transition:opacity .35s var(--ease),transform .35s var(--ease)}
 .ar.on,.ar.ok{opacity:1!important}
 .ar.on{transform:translateY(-8px)!important}
@@ -633,7 +633,9 @@ ul,ol{list-style:none}
 .sc-lv.on{background:#8D68FA!important;border-color:#8D68FA!important}
 .mq-g{gap:44px;padding:16px 22px}
 .mq-g span{border:0!important;background:none!important;padding:0!important;font-weight:500;color:#E0E1FF}
-.mq-g span:after{content:"";width:6px;height:6px;border-radius:50%;background:#8D68FA;margin-left:44px}
+.mq-g span:after{content:"";width:14px;height:14px;margin-left:44px;background:#8D68FA;-webkit-mask:url(assets/img/outils/fleur.svg) center/contain no-repeat;mask:url(assets/img/outils/fleur.svg) center/contain no-repeat}
+.ft-l{display:grid!important;grid-template-columns:repeat(3,1fr);gap:8px!important}
+.ft-l .ft{justify-content:center;display:inline-flex;align-items:center;white-space:nowrap}
 @media (prefers-reduced-motion:reduce){.mq-t{animation:none}}
 #donnees .dn-g{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
 .dn-c{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px}
@@ -642,7 +644,7 @@ ul,ol{list-style:none}
 .dn-c p{color:var(--muted);font-size:15.5px;line-height:1.55}
 #donnees .btn-o{color:var(--nuit);border-color:#8D68FA}
 #donnees .btn-o:hover{background:#8D68FA;color:#fff}
-@media (max-width:900px){#donnees .dn-g{grid-template-columns:1fr}.scene .h-ast{right:-8px;top:-30px;width:60px;height:60px}}
+@media (max-width:900px){#donnees .dn-g{grid-template-columns:1fr}.scene .h-ast{right:-8px;top:-40px;width:80px;height:80px}.hero-g{grid-template-columns:1fr!important}.ft-l{grid-template-columns:repeat(2,minmax(0,1fr))}.ft-l .ft{white-space:normal;font-size:13px;padding:6px 8px}}
 </style>
 </head>
 <body>
@@ -657,7 +659,7 @@ ul,ol{list-style:none}
  <img class="h-fleur" src="assets/img/motifs/pattern-3.svg" alt="" aria-hidden="true">
  <div class="wrap hero-g">
   <div class="hero-txt">
-   <p class="eyebrow e-lav">Yelema : votre entreprise décuplée par l'IA</p>
+   <p class="eyebrow e-lav">Votre entreprise, décuplée par l'IA</p>
    <h1>Une équipe d'<span class="acc">Experts IA</span> pour chaque fonction.</h1>
    <p class="lede">Ventes, finance, RH, service client : vos Experts IA travaillent directement dans vos outils, pour chaque fonction. Rien ne part sans votre accord.</p>
    <div class="ctas"><a class="btn btn-c" href="#equipes">Déployer mon équipe <svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn-o" href="#action"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></svg> Voir vos Experts au travail</a></div>
@@ -797,7 +799,7 @@ function travail(n){var w=$("#sc-w");if(!w)return;var d=C[cur],wi=$("#sc-wi"),wn
   wn.textContent=x[1]+" travaille dans "+o[1];var t=x[3],k=0;wa.textContent="";
   wp.style.transition="none";wp.style.width="0";void wp.offsetWidth;wp.style.transition="width 1s linear";wp.style.width="100%";
   (function tape(){if(k<=t.length){wa.textContent=t.slice(0,k);k+=2;pas.push(setTimeout(tape,16))}})();return}
- w.className="sc-w fin";wi.src="assets/img/logos/yelema-tuile.webp";wn.textContent=n===4?"Tout est prêt":"C'est livré";
+ w.className="sc-w fin";var o3=OUT[d.x[3][0]];wi.src=o3[0];wi.alt=o3[1];wn.textContent=n===4?"Tout est prêt, dans vos outils":"C'est livré";
  wa.textContent=n===4?"Rien ne part sans votre accord":"Compte rendu envoyé à "+low(d.r);wp.style.transition="none";wp.style.width="100%"}
 function etat(n){var d=C[cur],a=$$("#arches .ar");
  sc.classList.toggle("joue",n>=0&&n<4);
