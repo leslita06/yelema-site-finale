@@ -988,6 +988,129 @@ h1 .sh-acc,h2 .sh-acc{color:#E4765A}
 .v2-cu-tabs .v2-ic{width:18px;height:18px}
 .v2-cu-ric .v2-ic{width:20px;height:20px}
 .tm-ic .v2-ic{width:20px;height:20px}
+.fq-g{display:grid;grid-template-columns:.75fr 1.25fr;gap:64px;align-items:start}
+.fq-h{position:sticky;top:120px}
+.fq-h h2{margin:18px 0 28px}
+.fqs{display:grid;gap:12px}
+.fq{background:#fff;border:1px solid var(--line);border-radius:20px;transition:box-shadow .3s,border-color .3s}
+.fq[open]{border-color:var(--lav);box-shadow:0 16px 36px rgba(48,22,103,.07)}
+.fq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:18px;align-items:center;padding:22px 26px;font:600 17.5px var(--h);color:var(--nuit)}
+.fq summary::-webkit-details-marker{display:none}
+.fq-c{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--lil);color:var(--violet-t);flex:none;transition:transform .3s var(--ease),background .3s,color .3s}
+.fq[open] .fq-c{transform:rotate(45deg);background:var(--coral);color:#fff}
+.fq p{padding:0 26px 24px;color:var(--muted);font-size:16.5px;line-height:1.65}
+@media(max-width:1080px){.pb-g,.fq-g{grid-template-columns:1fr;gap:40px}
+.pb-h,.fq-h{position:static}}
+@media(max-width:760px){.fq summary{padding:18px 18px;font-size:16.5px}
+.fq p{padding:0 18px 20px}}
+
+.ftr.p2{padding:56px 0 26px}
+.p2 .ftr-in{grid-template-columns:1.5fr 1fr 1fr 1fr!important;gap:40px}
+.p2 .f-brand p{max-width:280px}
+.p2 .ftr-b{margin-top:36px}
+.p2 .f-cta{display:inline-block!important;margin-top:4px;background:#E4765A;color:#fff!important;border-radius:999px;padding:9px 16px;font:600 14px var(--h)}
+.ftr.p1{padding:34px 0 22px}
+.p1 .f-ligne{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.p1 .f-ligne .ftr-lg{margin:0;height:30px}
+.p1 nav{display:flex;gap:26px;flex-wrap:wrap}.p1 nav a,.p1 .f-mail{margin:0!important}
+.p1 .f-droite{display:flex;align-items:center;gap:16px}.p1 .f-soc{margin:0}
+.p1 .ftr-b{margin-top:22px;padding-top:16px}
+@media (max-width:760px){.p2 .ftr-in{grid-template-columns:1fr 1fr!important}.p2 .f-brand{grid-column:1/-1}
+ .p1 .f-ligne{flex-direction:column;align-items:flex-start}.p1 nav{gap:14px 20px}}
+#ylmodal{--body:'Funnel Display',system-ui,sans-serif;--indigo:#301667;--lavp:#E0E1FF;--line:#ece8fa;--title:'Space Grotesk',system-ui,sans-serif;--violet:#8D68FA;}
+.yl-modal{position:fixed;inset:0;z-index:120;display:grid;place-items:center;padding:20px}
+.yl-modal[hidden]{display:none !important}
+.yl-mbg{position:absolute;inset:0;background:rgba(24,10,54,.62);backdrop-filter:blur(3px)}
+.yl-mbox{position:relative;background:#fff;border-radius:28px;padding:34px 34px 26px;
+  width:min(560px,100%);max-height:92vh;overflow:auto;
+  box-shadow:0 40px 90px rgba(24,10,54,.4)}
+.yl-mx{position:absolute;top:16px;right:18px;border:0;background:transparent;font-size:28px;
+  line-height:1;color:#8e87a8;cursor:pointer}
+.yl-mbox h3{font-size:25px;color:var(--indigo);margin:2px 0 8px;line-height:1.2}
+.yl-msub{color:#5f5880;font-size:14.8px;line-height:1.6;margin:0 0 20px}
+.yl-mform{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.yl-mform label{display:flex;flex-direction:column;gap:5px;font-size:12.6px;font-weight:600;
+  color:#5f5880;font-family:var(--title)}
+.yl-mform input,.yl-mform select,.yl-mform textarea{border:1px solid var(--line);
+  border-radius:12px;
+  padding:11px 13px;font-family:var(--body);font-size:14.5px;color:#241a3c;background:#fbfaff}
+.yl-mform textarea{resize:vertical;min-height:74px;line-height:1.45}
+.yl-tel{display:flex;gap:7px}
+.yl-tel select{flex:0 0 auto;width:auto;max-width:120px;padding-left:9px;padding-right:4px;
+  font-size:14px}
+.yl-tel input{flex:1 1 auto;min-width:0}
+.yl-mform input:focus,.yl-mform select:focus,.yl-mform textarea:focus{outline:2px solid var(--violet);
+  outline-offset:1px;background:#fff}
+.yl-mfull{grid-column:1/-1}
+button.yl-mfull{margin-top:4px}
+.yl-mfoot{font-size:12.4px;color:#8e87a8;margin:14px 0 0;line-height:1.5}
+@media(max-width:560px){.yl-mform{grid-template-columns:1fr}
+.yl-mbox{padding:26px 22px 20px}}
+.yl-mok{grid-column:1/-1;margin:2px 0 0;padding:12px 14px;border-radius:12px;
+  background:var(--lavp);color:var(--indigo);font-size:14px;line-height:1.5}
+.yl-mform label{min-width:0}
+.yl-tel select{max-width:104px}
+.yl-tel input{min-width:180px}
+#ylmodal .btn{width:100%;justify-content:center}
+#ylmodal [hidden]{display:none!important}
+
+/* la mémoire : une boucle qui apprend seule */
+.mb{position:relative;width:min(470px,100%);aspect-ratio:1;margin:0 auto}
+.mb-cercle{position:absolute;inset:12%;border:2px dashed rgba(197,196,255,.45);border-radius:50%}
+.mb-tour{position:absolute;inset:12%;animation:mbR 9s linear infinite}
+.mb-tour i{position:absolute;left:50%;top:-7px;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:#E4765A;box-shadow:0 0 18px #E4765A}
+@keyframes mbR{to{transform:rotate(360deg)}}
+.mb-c{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:36%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#4B2AA8,#301667);display:grid;place-content:center;text-align:center;padding:12px;box-shadow:0 0 0 10px rgba(141,104,250,.15)}
+.mb-c b{font:700 15px/1.25 var(--h);color:#fff}.mb-c small{color:#C5C4FF;font-size:12px;margin-top:4px}
+.mb-n{position:absolute;width:40%;display:flex;gap:9px;align-items:center;background:#fff;border-radius:16px;padding:9px 11px;box-shadow:0 14px 30px rgba(0,0,0,.3)}
+.mb-n img,.mb-n i{width:36px;height:36px;border-radius:50%;flex:none;object-fit:cover;object-position:top;background:#ECEAFF}
+.mb-n i{display:grid;place-items:center;font-style:normal;color:#8D68FA}
+.mb-n b{display:block;font:700 12.5px var(--h);color:var(--nuit)}.mb-n span{font-size:11.5px;line-height:1.3;color:#4a4566}
+.mb-1{left:50%;top:0;transform:translate(-50%,-10%)}.mb-2{right:-14%;top:50%;transform:translateY(-50%)}
+.mb-3{left:50%;bottom:0;transform:translate(-50%,10%)}.mb-4{left:-14%;top:50%;transform:translateY(-50%)}
+@media (max-width:600px){.mb{aspect-ratio:auto;display:grid;gap:10px}.mb-cercle,.mb-tour{display:none}.mb-c,.mb-n{position:static;transform:none;width:100%}.mb-c{aspect-ratio:auto;border-radius:20px;padding:16px}}
+@media (prefers-reduced-motion:reduce){.mb-tour{animation:none}}
+/* vers Qui sommes-nous */
+.qs-lien{display:flex;justify-content:space-between;align-items:center;gap:20px;max-width:980px;margin:0 auto;background:var(--lil);border-radius:24px;padding:24px 28px}
+.qs-lien b{display:block;font:700 19px var(--h);color:var(--nuit)}.qs-lien span{color:var(--ink)}
+@media (max-width:760px){.qs-lien{flex-direction:column;align-items:flex-start}}
+
+.sx-tr{background:linear-gradient(135deg,#301667,#4B2AA8 70%,#6b58fb);color:#fff;border-radius:28px;padding:40px!important;display:grid;gap:22px}
+.sx-tr h2{color:#fff!important;margin:0;font-size:clamp(26px,3vw,36px)}.sx-tr h2 em{font-style:normal;color:#FFB39E}
+.sx-tr>p{color:#E6E4FF;margin:0;max-width:720px}
+.sx-tr ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sx-tr li{background:rgba(255,255,255,.09);border-radius:20px;padding:18px!important}
+.sx-tr li b{display:flex;align-items:center;gap:10px;font:700 17px var(--h);margin-bottom:6px}
+.sx-tr li b i{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#5BD08F;color:#1B0E3D;font-style:normal;font-size:14px}
+.sx-tr li span{color:#E6E4FF;font-size:14.5px}
+.sx-tr a{color:#fff;font-weight:600}
+@media (max-width:900px){.sx-tr ol{grid-template-columns:1fr}.sx-tr{padding:24px}}
+/* hauts de page : un même panneau à droite sur toutes les pages (vocaux 60146, 60207, 60208) */
+.ph .wrap.ph-g{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.ph-g .ph-ast{display:none}
+.hv{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(197,196,255,.25);border-radius:26px;padding:20px;width:min(470px,100%);justify-self:end}
+.hv-ph{width:150px;height:190px;border-radius:999px 999px 20px 20px;overflow:hidden;background:#C5C4FF}
+.hv-ph img{width:100%;height:100%;object-fit:cover;object-position:center 10%}
+.hv-ph.ic{display:grid;place-items:center;background:linear-gradient(160deg,#5A3BD6,#301667)}
+.hv-ph.ic .v2-ic{width:74px;height:74px;color:#5BD08F}
+.hv-l{display:grid;gap:10px}
+.hv-t{display:flex;align-items:center;gap:10px;background:#fff;color:var(--nuit);border-radius:14px;padding:9px 12px;font:600 13px/1.3 var(--h);opacity:0;animation:hvIn .5s ease forwards}
+.hv-t:nth-child(2){animation-delay:.2s}.hv-t:nth-child(3){animation-delay:.4s}
+.hv-t i{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;flex:none;color:#fff}
+.hv-t i .v2-ic{width:16px;height:16px}
+.hv-t small{display:block;font:700 10px var(--h);letter-spacing:.06em;text-transform:uppercase;opacity:.6}
+@keyframes hvIn{to{opacity:1}}
+@media (max-width:900px){.ph .wrap.ph-g{grid-template-columns:1fr}.hv{justify-self:start;grid-template-columns:110px 1fr}.hv-ph{width:110px;height:140px}}
+@media (prefers-reduced-motion:reduce){.hv-t{animation:none;opacity:1}}
+
+/* variante A : haut de page clair, sans bandeau encadré */
+.ph{background:transparent!important;padding:0!important}
+.ph-in{background:radial-gradient(700px 380px at 85% 30%,#E4E0FF 0%,transparent 70%),linear-gradient(180deg,#F3F1FF 0%,#FBFAFF 100%)!important;color:var(--nuit)!important;border-radius:0!important;padding:150px 0 70px!important}
+.ph h1{color:var(--nuit)!important}.ph .lede{color:var(--ink)!important}
+.hv{background:#fff;border-color:var(--line);box-shadow:0 22px 50px rgba(48,22,103,.10)}
+.hv-t{background:var(--lil)}
+.nav:not(.solide) nav{color:var(--nuit)}.nav:not(.solide) .lg-b{display:none}.nav:not(.solide) .lg-c{display:block}
+.nav:not(.solide) .burger span{background:var(--nuit)}
 </style>
 <link rel="stylesheet" href="css/ancien.css"></head>
 <body>
@@ -997,7 +1120,7 @@ h1 .sh-acc,h2 .sh-acc{color:#E4765A}
  <nav id="menu" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="secteurs.html">Secteurs</a><a href="comment-ca-marche.html">Comment ça marche</a><a href="securite.html" aria-current="page" class="ici">Sécurité</a><a href="offres.html">Offres</a><a href="contact.html">Contact</a><a class="btn btn-p menu-cta" href="index.html#equipes">Composer mon équipe</a></nav>
  <a class="btn btn-c btn-s nav-cta" href="index.html#equipes">Composer mon équipe</a>
  <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
-</div></header><main id="contenu"><section class="ph" id="haut"><div class="ph-in"><svg class="ph-ast" aria-hidden="true" viewBox="0 0 100 100" stroke="currentColor" stroke-linecap="round"><g stroke-width="17"><line x1="50" y1="12" x2="50" y2="88"/><line x1="17" y1="31" x2="83" y2="69"/><line x1="17" y1="69" x2="83" y2="31"/></g></svg><div class="wrap"><p class="eyebrow e-lav">Sécurité</p><h1>Vos données restent chez vous.</h1><p class="lede">Où vont vos documents, ce que voit le modèle d'IA, qui accède à quoi : tout est écrit ici.</p></div></div></section><section id="risque" class="pad soft v2-risque"><div class="wrap">
+</div></header><main id="contenu"><section class="ph" id="haut"><div class="ph-in"><svg class="ph-ast" aria-hidden="true" viewBox="0 0 100 100" stroke="currentColor" stroke-linecap="round"><g stroke-width="17"><line x1="50" y1="12" x2="50" y2="88"/><line x1="17" y1="31" x2="83" y2="69"/><line x1="17" y1="69" x2="83" y2="31"/></g></svg><div class="wrap ph-g"><div><p class="eyebrow e-lav">Sécurité</p><h1>Vos données restent chez vous.</h1><p class="lede">Où vont vos documents, ce que voit le modèle d'IA, qui accède à quoi : tout est écrit ici.</p></div><div class="hv" aria-hidden="true"><div class="hv-ph ic"><svg class="v2-ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg></div><div class="hv-l"><span class="hv-t"><i style="background:#2E4EC4"><svg class="v2-ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></i><span><small>Vos données</small>sur un serveur à vous seul</span></span><span class="hv-t"><i style="background:#8D68FA"><svg class="v2-ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/></svg></i><span><small>Le contrôle</small>chaque accès s'ouvre et se retire</span></span><span class="hv-t"><i style="background:#E4765A"><svg class="v2-ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.9 4.2A10 10 0 0 1 22 12a13 13 0 0 1-1.7 2.7M6.6 6.6A13.5 13.5 0 0 0 2 12s3 7 10 7a9.7 9.7 0 0 0 5.4-1.6"/><path d="m2 2 20 20"/></svg></i><span><small>Aucun entraînement</small>le modèle n'en garde rien</span></span></div></div></div></div></section><section id="risque" class="pad soft v2-risque"><div class="wrap">
  <div class="section-h"><p class="eyebrow">Le vrai risque</p><h2>L'IA est déjà dans votre entreprise, par le <span class="sh-acc">téléphone</span> de vos salariés.</h2>
   <p>Un contrat collé dans un ChatGPT ou un Claude personnel, un fichier Excel envoyé depuis un compte gratuit : vos données sortent, sans contrat et sans trace.</p></div>
  <div class="v2-lanes">
@@ -1026,7 +1149,7 @@ h1 .sh-acc,h2 .sh-acc{color:#E4765A}
   <div class="v2-row"><span class="v2-x">Chacun repart de zéro</span><span class="v2-v">La mémoire de l'entreprise profite à tous</span></div>
  </div>
  <p class="v2-cle">Le document ne quitte pas votre infrastructure. Le modèle ne voit que l'extrait nécessaire, et n'en garde rien.</p>
-</div></section><div class="anc"><section class="pad v2-niv"><div class="wrap">
+</div></section><div class="anc"><section class="pad"><div class="wrap"><div class="sx-tr"><h2>Avec vos Experts IA, <em>c'est l'inverse.</em></h2><p>L'IA travaille pour vos équipes, et vos données ne sortent plus sans que vous le sachiez. Trois engagements, écrits dans votre contrat.</p><ol><li><b><i>1</i>Vos données restent chez vous</b><span>Un serveur à vous seul, hébergé pour vous ou installé dans vos locaux. <a href="#niveaux">Les deux niveaux</a></span></li><li><b><i>2</i>Vous gardez le contrôle</b><span>Chaque Expert ne voit que ce que vous lui ouvrez, et tout acte sensible attend votre accord.</span></li><li><b><i>3</i>Elles vous appartiennent</b><span>Aucun modèle entraîné sur vos données. Si vous arrêtez, nous vous rendons tout. <a href="#securite">Nos garanties</a></span></li></ol></div></div></section><section class="pad v2-niv" id="niveaux"><div class="wrap">
  <div class="section-h"><p class="eyebrow">Deux niveaux de confidentialité</p><h2>Vos données restent <span class="sh-acc">chez vous</span>, et vous en gardez le contrôle.</h2>
   <p>Un serveur à vous seul dans les deux cas, hébergé pour vous ou installé dans vos locaux.</p></div>
  <div class="v2-niv-g">
@@ -1054,19 +1177,19 @@ h1 .sh-acc,h2 .sh-acc{color:#E4765A}
    <div class="sx-bs"><span class="sx-b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9.5 12l2 2 3.5-4"/></svg>Conforme aux exigences de l'ARTCI</span><span class="sx-b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="M9 12l2 2 4-4"/></svg>Instances certifiées SOC&nbsp;2</span><span class="sx-b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Surveillance 24h/24</span><span class="sx-b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg>Hébergement local possible</span></div>
    <div class="sx-cs"><div class="sx-c"><div class="sx-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.9.8A3 3 0 0 0 4 11a3 3 0 0 0 2 5.2A3 3 0 0 0 12 18z"/><path d="M12 5a3 3 0 1 1 5.9.8A3 3 0 0 1 20 11a3 3 0 0 1-2 5.2A3 3 0 0 1 12 18z"/><path d="M4 4l16 16"/></svg></div><p><b>Aucun modèle entraîné</b><span>Vos données servent à votre entreprise, à rien d'autre.</span></p></div><div class="sx-c"><div class="sx-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div><p><b>Un espace par entreprise</b><span>Aucun autre client n'y accède.</span></p></div><div class="sx-c"><div class="sx-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div><p><b>Chiffrées en transit et au repos</b><span>Vos échanges comme vos fichiers stockés.</span></p></div><div class="sx-c"><div class="sx-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/><path d="M4 11.5v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div><p><b>Sauvegardes quotidiennes</b><span>Votre espace est sauvegardé chaque nuit.</span></p></div><div class="sx-c"><div class="sx-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div><p><b>Chacun son espace</b><span>Personne ne voit les conversations d'un collègue.</span></p></div><div class="sx-c"><div class="sx-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg></div><p><b>Votre accord d'abord</b><span>Rien de sensible ne part sans votre accord.</span></p></div><div class="sx-c"><div class="sx-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7"/><path d="M21 3l-9 9"/><path d="M19 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg></div><p><b>Vous repartez avec tout</b><span>Vos données rendues, les nôtres supprimées.</span></p></div><div class="sx-c"><div class="sx-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div><p><b>Vos interlocuteurs à Abidjan</b><span>Une équipe qui répond, dans votre fuseau.</span></p></div></div>
    <p class="center sx-q">Une question de votre DSI ou de votre juriste&nbsp;? <a href="contact.html">Écrivez-nous</a>, on répond au cas par cas.</p>
- </div></section></div><section class="pad" id="contact"><div class="wrap">
+ </div></section></div><section class="pad soft" id="faq"><div class="wrap fq-g"><div class="fq-h rv"><p class="eyebrow">Vos données</p><h2>Les questions sur la sécurité.</h2></div><div class="fqs"><details class="fq rv"><summary>Mes salariés utilisent ChatGPT ou Claude avec leur compte personnel : est-ce un risque ?<span class="fq-c"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><p>Oui. Le document collé sort de l'entreprise, reste chez le fournisseur et peut servir à entraîner son modèle, sans que personne ne le sache. Avec Yelema, vos équipes ont un espace confidentiel sur votre serveur : le document y reste, et le modèle ne voit que l'extrait nécessaire.</p></details><details class="fq rv"><summary>Où sont stockées nos données, et qui y a accès ?<span class="fq-c"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><p>Sur un serveur dédié à votre entreprise, isolé des autres clients. Y accèdent les comptes que vous ouvrez, et notre équipe pour opérer vos Experts. Le fournisseur du modèle ne reçoit que l'extrait nécessaire à chaque tâche, et n'en garde rien.</p></details><details class="fq rv"><summary>Peut-on installer Yelema sur un serveur chez nous ?<span class="fq-c"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><p>Oui, dans l'offre Custom. Le serveur et un modèle open source tournent alors dans vos locaux, et aucun document ne quitte vos murs. C'est le choix des ministères et des banques.</p></details><details class="fq rv"><summary>Entre collègues, qui voit quoi ?<span class="fq-c"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></span></summary><p>Personne ne voit les conversations ni les fichiers d'un autre, direction comprise, sauf ce qu'il choisit de partager. Si vous le souhaitez, l'hébergement peut aussi être local, en Côte d'Ivoire.</p></details></div></div></section><section class="pad" id="contact"><div class="wrap">
  <div class="cta rv"><div class="cta-in"><div class="cta-fl" aria-hidden="true"><i></i><i></i><i></i></div>
   <svg class="cta-ast" aria-hidden="true" viewBox="0 0 100 100" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="17"><line x1="50" y1="12" x2="50" y2="88"/><line x1="17" y1="31" x2="83" y2="69"/><line x1="17" y1="69" x2="83" y2="31"/></g></svg><img class="cta-f" src="assets/img/motifs/pattern-3.svg" alt="" aria-hidden="true" loading="lazy">
   <div class="cta-arc"><span class="ma" style="--bg:#8D68FA"><img class="av" src="assets/img/experts/av-seydou-sq.webp" alt="Seydou" width="420" height="420" loading="lazy" decoding="async"></span><span class="ma" style="--bg:#2E4EC4"><img class="av" src="assets/img/experts/av-fatima-sq.webp" alt="Fatima" width="420" height="420" loading="lazy" decoding="async"></span><span class="ma" style="--bg:#E4765A"><img class="av" src="assets/img/experts/av-adjoua-sq.webp" alt="Adjoua" width="420" height="420" loading="lazy" decoding="async"></span><span class="ma" style="--bg:#C5C4FF"><img class="av" src="assets/img/experts/av-mamadou-sq.webp" alt="Mamadou" width="420" height="420" loading="lazy" decoding="async"></span><span class="ma" style="--bg:#8D68FA"><img class="av" src="assets/img/experts/av-awa-sq.webp" alt="Awa" width="420" height="420" loading="lazy" decoding="async"></span><span class="ma" style="--bg:#2E4EC4"><img class="av" src="assets/img/experts/av-fifame-sq.webp" alt="Fifamè" width="420" height="420" loading="lazy" decoding="async"></span></div>
   <h2>Votre première équipe d'<span class="acc">Experts</span> peut démarrer cette semaine.</h2>
   <p>Dites-nous la fonction qui vous coûte le plus. Nous vous montrons l'équipe au travail sur l'un de vos cas réels.</p>
-  <div class="ctas"><a class="btn btn-c" href="mailto:contact@yelema.ai">Demander une démo <svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn-o" href="mailto:contact@yelema.ai"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> contact@yelema.ai</a></div>
+  <div class="ctas"><a class="btn btn-c" href="#demo">Demander une démo <svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn-o" href="mailto:contact@yelema.ai"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> contact@yelema.ai</a></div>
  </div></div>
-</div></section><footer class="ftr"><div class="wrap ftr-in f5"><div class="f-brand"><img src="assets/img/logos/yelema-long-blanc.webp" alt="Yelema" class="ftr-lg" width="359" height="104" loading="lazy"><p class="f-tag"><b>Votre entreprise,</b> décuplée par <b>l'IA.</b></p><p>Des équipes d'Experts IA, une pour chaque fonction de l'entreprise, au travail dans les entreprises d'Afrique francophone.</p><p class="ftr-a">Ivoire Trade Center, rez-de-chaussée de la tour&nbsp;D<br>Abidjan, Côte d'Ivoire</p><div class="f-soc">
+</div></section><footer class="ftr p2"><div class="wrap ftr-in"><div class="f-brand"><img src="assets/img/logos/yelema-long-blanc.webp" alt="Yelema" class="ftr-lg" width="359" height="104" loading="lazy"><p class="f-tag"><b>Experts IA</b> pour les entreprises africaines.</p><p class="ftr-a">Ivoire Trade Center, tour D<br>Abidjan, Côte d'Ivoire</p><div class="f-soc">
        <a href="https://www.linkedin.com/company/yelemaai/" target="_blank" rel="noopener" aria-label="Yelema sur LinkedIn" title="Yelema sur LinkedIn"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" transform="translate(4.002 4.000) scale(0.035714)" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></i></a>
        <a href="https://www.youtube.com/channel/UCCTTWPdFvIE2B7hUmDBp-5Q" target="_blank" rel="noopener" aria-label="Yelema sur YouTube" title="Yelema sur YouTube"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" transform="translate(2.250 3.333) scale(0.033854)" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></i></a>
        <a href="mailto:contact@yelema.ai" aria-label="Nous écrire" title="Nous écrire"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" transform="translate(4.133 4.133) scale(0.030729)" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></i></a>
-     </div></div><div><h4>Naviguer</h4><a href="comment-ca-marche.html">Comment ça marche</a><a href="secteurs.html">Secteurs</a><a href="offres.html">Offres</a><a href="securite.html">Sécurité</a><a href="carrieres.html">Carrières</a><a href="partenaires.html">Devenir partenaire</a></div><div><h4>Les équipes</h4><a href="index.html#equipes" data-go="0">Commercial &amp; Ventes</a><a href="index.html#equipes" data-go="1">Marketing &amp; Communication</a><a href="index.html#equipes" data-go="2">RH &amp; Talents</a><a href="index.html#equipes" data-go="3">Finance &amp; Comptabilité</a><a href="index.html#equipes" data-go="4">Service client &amp; Fidélisation</a><a href="index.html#equipes" data-go="5">Investissement &amp; Portefeuille</a></div><div><h4>Comparatifs</h4><a href="vs-chatgpt.html">vs ChatGPT</a><a href="vs-copilot.html">vs Microsoft Copilot</a><a href="vs-claude.html">vs Claude</a><a href="vs-gemini.html">vs Gemini</a><a href="vs-openai-dots.html">vs OpenAI Dots</a><a href="vs-muse.html">vs Muse (Meta)</a><a href="outils.html">Les outils des Experts</a></div><div><h4>Ressources</h4><a href="https://leslita06.github.io/yelema-declic-equipes/">Le Déclic</a><a href="https://leslita06.github.io/yelema-cas-usage/">Catalogue de cas d'usage</a></div><div class="f-news"><h4>Recevoir les actualités</h4><p>Une fois par mois, ce que l'IA change vraiment pour les entreprises d'Afrique francophone. Ce qui marche, et ce qui ne marche pas.</p><form class="f-form" action="mailto:contact@yelema.ai?subject=Actualit%C3%A9s%20Yelema" method="post" enctype="text/plain"><input type="email" name="email" placeholder="votre@entreprise.ci" aria-label="Votre adresse e-mail" required><button type="submit">S'inscrire</button></form></div></div><div class="wrap ftr-b"><span>© 2026 Yelema. Abidjan, Côte d'Ivoire</span><span class="f-bl"><a href="confidentialite.html">Politique de confidentialité</a><a href="mailto:contact@yelema.ai">contact@yelema.ai</a></span></div></footer><script>(function(){
+     </div></div><div><h4>Produit</h4><a href="comment-ca-marche.html">Comment ça marche</a><a href="secteurs.html">Secteurs</a><a href="offres.html">Offres</a><a href="securite.html">Sécurité</a><a href="comparatifs.html">Comparatifs</a></div><div><h4>Yelema</h4><a href="qui-sommes-nous.html">Qui sommes-nous</a><a href="carrieres.html">Carrières</a><a href="partenaires.html">Devenir partenaire</a><a href="https://leslita06.github.io/yelema-declic-equipes/">Le Déclic</a></div><div><h4>Contact</h4><a href="mailto:contact@yelema.ai">contact@yelema.ai</a><a class="f-cta" href="#demo">Demander une démo</a></div></div><div class="wrap ftr-b"><span>© 2026 Yelema. Abidjan, Côte d'Ivoire</span><span class="f-bl"><a href="comparatifs.html">Comparatifs</a><a href="confidentialite.html">Politique de confidentialité</a><a href="mailto:contact@yelema.ai">contact@yelema.ai</a></span></div></footer><script>(function(){
 var nav=document.getElementById("nav"),bg=document.getElementById("burger");
 function n(){nav.classList.toggle("solide",scrollY>60)}addEventListener("scroll",n,{passive:true});n();
 function ferme(){nav.classList.remove("open");bg.setAttribute("aria-expanded","false")}
@@ -1075,4 +1198,59 @@ document.querySelectorAll("#menu a").forEach(function(a){a.addEventListener("cli
 var rv=document.querySelectorAll(".rv");
 if(matchMedia("(prefers-reduced-motion: reduce)").matches||!("IntersectionObserver" in window)){rv.forEach(function(c){c.classList.add("in")})}
 else{var vu=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");vu.unobserve(e.target)}})},{rootMargin:"0px 0px -6% 0px"});rv.forEach(function(c){vu.observe(c)})}
-})();</script></body></html>
+})();</script><div class="yl-modal" id="ylmodal" role="dialog" aria-modal="true" aria-labelledby="ylmt" hidden>
+  <div class="yl-mbg" data-close></div>
+  <div class="yl-mbox">
+    <button class="yl-mx" data-close aria-label="Fermer">&times;</button>
+    <p class="eyebrow">Démonstration</p>
+    <h3 id="ylmt">Voyons ce que ça donne chez vous</h3>
+    <p class="yl-msub">On vous montre un Expert au travail dans vos outils, sur votre activité réelle.</p>
+    <form class="yl-mform" id="ylmform">
+      <label>Votre nom<input name="nom" required autocomplete="name"></label>
+      <label>Votre entreprise<input name="societe" required autocomplete="organization"></label>
+      <label class="yl-mfull">Votre e-mail<input name="email" type="email" required autocomplete="email"></label>
+      <label class="yl-mfull">Votre téléphone<span class="yl-tel">
+             <select name="indicatif" aria-label="Indicatif du pays"><option value="+225" selected title="Côte d'Ivoire">🇨🇮&nbsp;+225</option><option value="+221" title="Sénégal">🇸🇳&nbsp;+221</option><option value="+229" title="Bénin">🇧🇯&nbsp;+229</option><option value="+226" title="Burkina Faso">🇧🇫&nbsp;+226</option><option value="+223" title="Mali">🇲🇱&nbsp;+223</option><option value="+227" title="Niger">🇳🇪&nbsp;+227</option><option value="+228" title="Togo">🇹🇬&nbsp;+228</option><option value="+245" title="Guinée-Bissau">🇬🇼&nbsp;+245</option><option value="+237" title="Cameroun">🇨🇲&nbsp;+237</option><option value="+224" title="Guinée">🇬🇳&nbsp;+224</option><option value="+233" title="Ghana">🇬🇭&nbsp;+233</option><option value="+212" title="Maroc">🇲🇦&nbsp;+212</option><option value="+241" title="Gabon">🇬🇦&nbsp;+241</option><option value="+242" title="Congo">🇨🇬&nbsp;+242</option><option value="+33" title="France">🇫🇷&nbsp;+33</option><option value="+32" title="Belgique">🇧🇪&nbsp;+32</option><option value="+1" title="Canada et États-Unis">🇨🇦&nbsp;+1</option></select>
+             <input name="tel" type="tel" autocomplete="tel"
+                    placeholder="07 00 00 00 00"></span></label>
+      <label class="yl-mfull">Le métier qui vous intéresse
+        <select name="metier">
+          <option value="" selected>Choisissez un métier</option>
+          <option>Commercial et ventes</option><option>Marketing et communication</option><option>RH et talents</option><option>Finance et comptabilité</option><option>Service client et fidélisation</option><option>Investissement et portefeuille</option>
+          <option>Autre</option>
+        </select></label>
+      <label class="yl-mfull" id="yl-mautre" hidden>Précisez le métier
+        <input name="metier_autre" autocomplete="off"
+               placeholder="Achats, logistique, recouvrement…"></label>
+      <label class="yl-mfull">Dites-nous en plus, si vous le souhaitez
+        <textarea name="message" rows="3" autocomplete="off"
+                  placeholder="Ce que vous aimeriez confier à l'expert, vos outils, votre volume…"></textarea></label>
+      <button class="btn btn-c yl-mfull" type="submit">Demander une démo</button>
+      <p class="yl-mok" id="ylm-ok" hidden>Merci, votre demande est enregistrée. On revient
+         vers vous rapidement.</p>
+    </form>
+    <p class="yl-mfoot">Vos coordonnées servent uniquement à vous recontacter.
+       Aucune inscription à une liste sans votre accord.</p>
+  </div>
+</div>
+<script>(function(){var YL_MAIL="https://formsubmit.co/ajax/contact@yelema.ai";
+var m=document.getElementById('ylmodal');if(!m)return;var dernier=null;
+function ouvrir(e){if(e)e.preventDefault();dernier=document.activeElement;m.hidden=false;document.body.style.overflow='hidden';var p=m.querySelector('input');if(p)p.focus()}
+function fermer(){m.hidden=true;document.body.style.overflow='';if(dernier&&dernier.focus)dernier.focus()}
+document.querySelectorAll('a[href="#demo"],[data-demo]').forEach(function(a){a.addEventListener('click',ouvrir)});
+if(location.hash==='#demo')ouvrir();
+m.querySelectorAll('[data-close]').forEach(function(b){b.addEventListener('click',fermer)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden)fermer()});
+var s=document.querySelector('#ylmform select[name=metier]'),au=document.getElementById('yl-mautre');
+if(s&&au){var ai=au.querySelector('input');s.addEventListener('change',function(){var o=s.value==='Autre';au.hidden=!o;ai.required=o;if(o)ai.focus();else ai.value=''})}
+document.getElementById('ylmform').addEventListener('submit',function(e){e.preventDefault();
+var d=new FormData(this),l=[],f=this,z=document.getElementById('ylm-ok'),b=f.querySelector('button[type=submit]');
+d.forEach(function(v,k){if(String(v).trim())l.push(k+' : '+v)});
+if(b){b.disabled=true;b.textContent='Envoi en cours…'}
+function rendre(){if(b){b.disabled=false;b.textContent='Demander une démo'}}
+var c={_subject:'Demande de démonstration, '+(d.get('societe')||''),'Société':d.get('societe')||'','Nom':d.get('nom')||'',email:d.get('email')||'',
+'Téléphone':String(d.get('tel')||'').trim()?(d.get('indicatif')||'')+' '+String(d.get('tel')).trim():'','Métier':d.get('metier')||'','Métier (autre)':d.get('metier_autre')||'',
+'Message':d.get('message')||'',Page:location.pathname.split('/').pop()||'index.html',_captcha:'false',_template:'table'};
+function rate(){rendre();location.href='mailto:contact@yelema.ai?subject='+encodeURIComponent('Demande de démonstration, '+(d.get('societe')||''))+'&body='+encodeURIComponent('Demande de démonstration\n\n'+l.join('\n'))}
+fetch(YL_MAIL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(c)})
+.then(function(r){return r.json()}).then(function(r){if(r&&String(r.success)==='true'){if(z)z.hidden=false;f.reset();rendre()}else rate()}).catch(rate)})})();</script></body></html>
