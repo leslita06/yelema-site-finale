@@ -122,6 +122,7 @@ for k, sd in subs.items():
 
 # ---------- 5. Accueil : section Offres ----------
 x = open('index.html').read()
+x = x.replace('href="#demo"', 'href="#contact"') if 'id="demo"' not in x else x
 cards_home = '''<section class="pad" id="offres"><div class="wrap">
 <div class="sh rv"><p class="eyebrow">Nos offres</p><h2>Trois offres, et le chat d'entreprise pour tous.</h2>
 <p>Commencez par le dirigeant, étendez fonction par fonction.</p></div>
